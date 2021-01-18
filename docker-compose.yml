@@ -12,3 +12,22 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    volumes:
+      - "./backend:/backend"
+    ports:
+      - "8080"
+    expose:
+      - "8080"
+    depends_on:
+      - db
+    links:
+      - db
+    tty: true
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
