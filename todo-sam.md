@@ -1,4 +1,4 @@
 # Sam's TODOs
 
-- [ ] set up docker db
-- [ ] pick/set up backend -- express + ts??
+- [x] set up docker db
+- [x] pick/set up backend -- express + ts??
