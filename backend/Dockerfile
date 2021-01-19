@@ -6,4 +6,4 @@ COPY package.json /backend/package.json
 COPY . /backend
 RUN npm install
 
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
