@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color:rgb(8, 184, 102);
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px black;
+    z-index: 9;
+    font-size: 18px;
+    transition-duration: 2s;
+    transition-property: background-color;
+    
+}
+
+
+header:hover {
+    background-color: rgb(173, 91, 71);
+}
+
+header h1 {
+    padding: 5px;
+    background-color: grey;
+    font-style: oblique;
+    max-width: 700px;
+    letter-spacing: normal;
+    transition-duration: 2s;
+    transition-property: letter-spacing;
+}
+
+header h1:hover {
+    letter-spacing: 0.3em;
+}
+
+body {
+    background-color: rgb(189, 245, 255);
+    background-image: url("./images/pexels-maarten-van-den-heuvel-2284166.jpg");
+}
+
+.homeContainer {
+    padding: 5px;
+    margin: 15px;
+    margin-top: 15%;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /*border: solid red;*/
+    flex-wrap: wrap;
+    flex: 1 1;
+}
+
+.homeNavButt {
+    font-size: xx-large;
+    display: flex;
+    min-height: 200px;
+    min-width: 310px;
+    margin: 5px;
+    border-radius: 10%;
+    /*border: solid thin black;*/
+    background-color: rgb(173, 91, 71);
+    justify-content: center;
+    align-items: center;
+    letter-spacing: normal;
+    transition-duration: 2s;
+    transition-property: background-color;
+    transition-property: letter-spacing;
+    flex-shrink: 3;
+}
+
+.homeNavButt:hover {
+    background-color: rgb(8, 184, 102);
+    letter-spacing: 1em;
+    
+}
+
+.images {
+   display: inline-block;
+   background-color: beige;
+   border: inset thick black;
+   z-index: 5;
+}
+
+#samChef {
+    float: left;
+}
+
+#henryChef {
+    float: right;
+}
+
+#homeQuote {
+   display: flex;
+   align-items: center;
+   font: 40px italic;
+   height: 100px;
+   background-color: #f0f0f0;
+   z-index: 5;
+}
+
+#chefContainer {
+    background-color: rgba(255, 235, 205, 0.5);
+
+    z-index: 2;
+}
